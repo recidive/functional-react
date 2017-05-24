@@ -1,0 +1,23 @@
+{
+  "name": "functional-react",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "1.0.5"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "Functional react examples.",
+  "main": "index.js",
+  "repository": {},
+  "author": "Henrique Recidive <recidive@gmail.com>",
+  "license": "MIT"
+}
