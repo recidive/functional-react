@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 1s linear;
   height: 80px;
 }
 
@@ -19,6 +19,7 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  0% { transform: rotate(0deg); width: 60px; }
+  50% { transform: rotate(180deg); width: 100px; }
+  100% { transform: rotate(360deg); width: 60px; }
 }
