@@ -65,6 +65,6 @@ const Example02Page = () => (
   <div className="App-main">
     <h1>Example 2</h1>
     <p>A functional component.</p>
-    <Example02MyComponent title="Hello World 2!" />
+    <Example02MyComponent title="Hello World!" />
   </div>
 )
