@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import logo from './logo.svg';
+import logo from './logo.svg'
 
-import './App.css';
+import './App.css'
 
 import Example01MyComponent from './example-01/MyComponent'
+import Example02MyComponent from './example-02/MyComponent'
 
 class App extends Component {
   render() {
@@ -20,13 +21,21 @@ class App extends Component {
         </p>
 
         <hr />
+
         <h1>Example 1</h1>
         <p>A class based component (not functional).</p>
         <Example01MyComponent title="Hello World" />
+
+        <hr />
+
+        <h1>Example 2</h1>
+        <p>A functional component.</p>
+        <Example02MyComponent title="Hello World" />
+
         <hr />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
