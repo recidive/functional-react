@@ -16,6 +16,7 @@ import Example04MyComponent from './example-04/MyComponent'
 import Example05MyContainer from './example-05/MyContainer'
 import Example06MyContainer from './example-06/MyContainer'
 import Example07MyContainer from './example-07/MyContainer'
+import Example08MyContainer from './example-08/MyContainer'
 
 class App extends Component {
   render() {
@@ -46,6 +47,7 @@ class App extends Component {
           <Route path="/example-05" component={ Example05Page } />
           <Route path="/example-06" component={ Example06Page } />
           <Route path="/example-07" component={ Example07Page } />
+          <Route path="/example-08" component={ Example08Page } />
         </div>
       </Router>
     )
@@ -63,6 +65,7 @@ const Navigation = () => (
     <li><Link to="/example-05">Example 5</Link></li>
     <li><Link to="/example-06">Example 6</Link></li>
     <li><Link to="/example-07">Example 7</Link></li>
+    <li><Link to="/example-08">Example 8</Link></li>
   </ul>
 )
 
@@ -121,5 +124,13 @@ const Example07Page = () => (
     <h1>Example 7</h1>
     <p>A functional container created with <em>withProps()</em>.</p>
     <Example07MyContainer title="Hello World!" />
+  </div>
+)
+
+const Example08Page = () => (
+  <div className="App-main">
+    <h1>Example 8</h1>
+    <p>A functional container created with <em>mapProps()</em>.</p>
+    <Example08MyContainer title="Hello World!" />
   </div>
 )
