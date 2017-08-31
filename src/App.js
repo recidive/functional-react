@@ -13,6 +13,9 @@ import Example01MyComponent from './example-01/MyComponent'
 import Example02MyComponent from './example-02/MyComponent'
 import Example03MyComponent from './example-03/MyComponent'
 import Example04MyComponent from './example-04/MyComponent'
+import Example05MyContainer from './example-05/MyContainer'
+import Example06MyContainer from './example-06/MyContainer'
+import Example07MyContainer from './example-07/MyContainer'
 
 class App extends Component {
   render() {
@@ -40,6 +43,9 @@ class App extends Component {
           <Route path="/example-02" component={ Example02Page } />
           <Route path="/example-03" component={ Example03Page } />
           <Route path="/example-04" component={ Example04Page } />
+          <Route path="/example-05" component={ Example05Page } />
+          <Route path="/example-06" component={ Example06Page } />
+          <Route path="/example-07" component={ Example07Page } />
         </div>
       </Router>
     )
@@ -54,6 +60,9 @@ const Navigation = () => (
     <li><Link to="/example-02">Example 2</Link></li>
     <li><Link to="/example-03">Example 3</Link></li>
     <li><Link to="/example-04">Example 4</Link></li>
+    <li><Link to="/example-05">Example 5</Link></li>
+    <li><Link to="/example-06">Example 6</Link></li>
+    <li><Link to="/example-07">Example 7</Link></li>
   </ul>
 )
 
@@ -88,5 +97,29 @@ const Example04Page = () => (
     <h1>Example 4</h1>
     <p>A functional component with an event handler.</p>
     <Example04MyComponent title="Hello World!" />
+  </div>
+)
+
+const Example05Page = () => (
+  <div className="App-main">
+    <h1>Example 5</h1>
+    <p>A functional container component with an event handler.</p>
+    <Example05MyContainer title="Hello World!" />
+  </div>
+)
+
+const Example06Page = () => (
+  <div className="App-main">
+    <h1>Example 6</h1>
+    <p>A functional container created with <em>withProps()</em>.</p>
+    <Example06MyContainer title="Hello World!" />
+  </div>
+)
+
+const Example07Page = () => (
+  <div className="App-main">
+    <h1>Example 7</h1>
+    <p>A functional container created with <em>withProps()</em>.</p>
+    <Example07MyContainer title="Hello World!" />
   </div>
 )
