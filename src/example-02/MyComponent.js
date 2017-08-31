@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const MyComponent = ({ title }) => <h2>{ title }</h2>
+const MyComponent = ({ title }) => <h1>{ title }</h1>
 
 MyComponent.propTypes = {
   title: PropTypes.string
