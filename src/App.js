@@ -12,6 +12,7 @@ import './App.css'
 import Example01MyComponent from './example-01/MyComponent'
 import Example02MyComponent from './example-02/MyComponent'
 import Example03MyComponent from './example-03/MyComponent'
+import Example04MyComponent from './example-04/MyComponent'
 
 class App extends Component {
   render() {
@@ -38,6 +39,7 @@ class App extends Component {
           <Route path="/example-01" component={ Example01Page } />
           <Route path="/example-02" component={ Example02Page } />
           <Route path="/example-03" component={ Example03Page } />
+          <Route path="/example-04" component={ Example04Page } />
         </div>
       </Router>
     )
@@ -51,6 +53,7 @@ const Navigation = () => (
     <li><Link to="/example-01">Example 1</Link></li>
     <li><Link to="/example-02">Example 2</Link></li>
     <li><Link to="/example-03">Example 3</Link></li>
+    <li><Link to="/example-04">Example 4</Link></li>
   </ul>
 )
 
@@ -77,5 +80,13 @@ const Example03Page = () => (
     <h1>Example 3</h1>
     <p>A class based component with an event handler.</p>
     <Example03MyComponent title="Hello World!" />
+  </div>
+)
+
+const Example04Page = () => (
+  <div className="App-main">
+    <h1>Example 4</h1>
+    <p>A functional component with an event handler.</p>
+    <Example04MyComponent title="Hello World!" />
   </div>
 )
