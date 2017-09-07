@@ -17,6 +17,9 @@ import Example05MyContainer from './example-05/MyContainer'
 import Example06MyContainer from './example-06/MyContainer'
 import Example07MyContainer from './example-07/MyContainer'
 import Example08MyContainer from './example-08/MyContainer'
+import Example09MyContainer from './example-09/MyContainer'
+import Example10MyContainer from './example-10/MyContainer'
+import Example11MyContainer from './example-11/MyContainer'
 
 class App extends Component {
   render() {
@@ -48,6 +51,9 @@ class App extends Component {
           <Route path="/example-06" component={ Example06Page } />
           <Route path="/example-07" component={ Example07Page } />
           <Route path="/example-08" component={ Example08Page } />
+          <Route path="/example-09" component={ Example09Page } />
+          <Route path="/example-10" component={ Example10Page } />
+          <Route path="/example-11" component={ Example11Page } />
         </div>
       </Router>
     )
@@ -66,6 +72,9 @@ const Navigation = () => (
     <li><Link to="/example-06">Example 6</Link></li>
     <li><Link to="/example-07">Example 7</Link></li>
     <li><Link to="/example-08">Example 8</Link></li>
+    <li><Link to="/example-09">Example 9</Link></li>
+    <li><Link to="/example-10">Example 10</Link></li>
+    <li><Link to="/example-11">Example 11</Link></li>
   </ul>
 )
 
@@ -132,5 +141,29 @@ const Example08Page = () => (
     <h1>Example 8</h1>
     <p>A functional container created with <em>mapProps()</em>.</p>
     <Example08MyContainer title="Hello World!" />
+  </div>
+)
+
+const Example09Page = () => (
+  <div className="App-main">
+    <h1>Example 9</h1>
+    <p>A functional container created with <em>mapProps()</em>.</p>
+    <Example09MyContainer title="Hello World!" />
+  </div>
+)
+
+const Example10Page = () => (
+  <div className="App-main">
+    <h1>Example 10</h1>
+    <p>A functional container created with <em>withState()</em>.</p>
+    <Example10MyContainer title="Hello World!" more="Hello everything else!" />
+  </div>
+)
+
+const Example11Page = () => (
+  <div className="App-main">
+    <h1>Example 11</h1>
+    <p>A functional container created with <em>withState and withHandlers()</em>.</p>
+    <Example11MyContainer title="Hello World!" more="Hello everything else!" />
   </div>
 )
